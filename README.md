@@ -6,13 +6,14 @@ An unofficial hub for onboarding & other information.
 
 ### Announcements
 
-🔔🔔 *[This Announcement Does Not Exist](https://github.com/EleutherAI/info/blob/main/ANNOUNCEMENTS.md)* (Feb. 30) 🔔🔔
+🔔 *[This Announcement Does Not Exist](https://github.com/EleutherAI/info/blob/main/ANNOUNCEMENTS.md)* (Feb. 30) 🔔
 
 ### Project Statuses
-(*Last updated October 29, 2020*)
+(*Last updated November 1, 2020*)
 * __GPT-Neo__: Architecture built. 1.3B model trained. Release pending evaluations.
 * __Pile™ v1__: Data collected. Deduplication in progress. Release pending writeup.
 * __Pile™ v2__: Data collection begun. Looking for > 10GiB datasets, non-English.
+* __OpenWebText2__: Data collected and [released](https://openwebtext2.readthedocs.io/en/latest/).
 * __Radioactive Lab__: Experiments begun. Reworking after [feedback from authors](https://github.com/facebookresearch/radioactive_data/issues/3).
 
 ### Links
@@ -38,6 +39,12 @@ Our models are built in [Mesh TensorFlow](https://github.com/tensorflow/mesh), w
 #### [The Pile™](https://github.com/EleutherAI/The-Pile)
 
 The Pile is a large, diverse, open source language modelling data set that consists of many smaller datasets combined together. The objective is to obtain text from as many modalities as possible to ensure that models trained using The Pile will have much broader generalization abilities. We are currently developing Version 1, with a goal of [1 TiB of English text](https://github.com/EleutherAI/The-Pile). After the completion of Version 1, our next goal is a [fully-multilingual, 10TiB text dataset](https://github.com/EleutherAI/The-Pile/tree/version2).
+
+#### [OpenWebText2](https://openwebtext2.readthedocs.io/en/latest/)
+
+The core principle of WebText is to build a high-quality internet dataset by extracting URLs from Reddit submissions, scraping the URLs, and then performing filtering for quality (by upvotes) & deduplication. As the dataset collected for training the original GPT-2 is not public, researchers independently reproduced the pipeline and released the resulting dataset, called OpenWebTextCorpus (OWT).
+
+OpenWebText2 (OWT2) is an enhanced version of the original OpenWebTextCorpus covering all Reddit submissions from 2005 up until April 2020, with further months becoming available after the corresponding PushShift dump files are released.
 
 #### [The Radioactive Lab](https://github.com/EleutherAI/radioactive-lab)
 
@@ -150,7 +157,7 @@ A: The Rad Lab is pursuing a number of directions to stamp our models. One of pa
 
 Q: *Why are you building HUMONGOUS?*
 
-A: Because none of the other Common Crawl-extracted datasets met our needs. For Pile™ v2, we will need tens of terabytes of clean, multilingual text, which is quite hard to come by! For that, we felt that building our own pipeline to extract LM-ready text from raw WARC (Web ARChive) files was the best strategy.
+A: Because none of the other large datasets met our needs. For Pile™ v2, we will need tens of terabytes of clean, multilingual text, which is quite hard to come by! For that, we felt that building our own pipeline to extract LM-ready text from raw WARC (Web ARChive) files was the best strategy.
 
 
 Q: *How is HUMONGOUS different from ([OSCAR](https://oscar-corpus.com/)/[C4](https://www.tensorflow.org/datasets/catalog/c4)/[CC100](http://data.statmt.org/cc-100/))?*
