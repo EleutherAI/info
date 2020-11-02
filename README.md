@@ -1,6 +1,6 @@
-# EleutherAI Info
+# Eleuther Info
 
-An unofficial hub for onboarding & other information.
+![EleutherAI Logo](https://avatars2.githubusercontent.com/u/68924597?s=200&v=4)
 
 ## Quick Info
 
