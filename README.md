@@ -24,13 +24,13 @@ An unofficial hub for onboarding & other information.
 
 ## About
 
-EleutherAI (/iˈluθər eɪ. aɪ/) is a grassroots collection of researchers with a common goal of open sourcing language models. Founded in July of 2020, our flagship project is GPT-Neo, a replication of OpenAI's massive 175B parameter language model, GPT-3.
+EleutherAI (/iˈluθər eɪ. aɪ/) is a grassroots collection of researchers working to open source AI research. Founded in July of 2020, our flagship project is GPT-Neo, a replication of OpenAI's massive 175B parameter language model, GPT-3.
 
 ### Projects
 
 #### [GPT-Neo](https://github.com/EleutherAI/GPTNeo)
 
-GPT-Neo is the code name for a series of transformer-based language models loosely styled around the GPT architecture that we plan to train and open source. Our primary goal is to replicate a GPT-3 sized model and open source it to the public, for free. 
+GPT-Neo is the code name for a series of transformer-based language models loosely styled around the GPT architecture that we plan to train and open source. One of our goals is to replicate a GPT-3 sized model and open source it to the public, for free. 
 
 Along the way we will be running experiments with alternative architectures and attention types, releasing any intermediate models, and writing up any findings on our blog. 
 
@@ -42,7 +42,7 @@ The Pile is a large, diverse, open source language modelling data set that consi
 
 #### [OpenWebText2](https://openwebtext2.readthedocs.io/en/latest/)
 
-The core principle of WebText is to build a high-quality internet dataset by extracting URLs from Reddit submissions, scraping the URLs, and then performing filtering for quality (by upvotes) & deduplication. As the dataset collected for training the original GPT-2 is not public, researchers independently reproduced the pipeline and released the resulting dataset, called OpenWebTextCorpus (OWT).
+The core principle of WebText is to build a high-quality internet dataset by extracting URLs from Reddit submissions, scraping the URLs, and then performing filtering for quality (by upvotes) & deduplication. As the dataset collected for training the original GPT-2 is not public, researchers independently reproduced the pipeline and released the resulting dataset, called [OpenWebTextCorpus (OWT)](https://skylion007.github.io/OpenWebTextCorpus/).
 
 OpenWebText2 (OWT2) is an enhanced version of the original OpenWebTextCorpus covering all Reddit submissions from 2005 up until April 2020, with further months becoming available after the corresponding PushShift dump files are released.
 
@@ -76,6 +76,11 @@ Q: *Are there any other ways to support EleutherAI?*
 
 A: Our biggest needs at the moment in the __compute__ department. If you or someone you know has access to large quantities of CPU, GPU, or TPU resources, send a message to Sid with more details.
 
+Q: *How does EleutherAI operate?*
+
+A: We currently have a flat structure, with each member responsible for keeping the project control information up to date. Each project has a leader and set of core contributors, so please speak to them first in the Discord if you want to participate. StellaAthena has taken on a leadership and coordination role, and has overall responsibility for the Documentation and Project Control systems. 
+
+
 Q: *So . . . what's the deal with your logo?*
 
 A: In keeping with the theme, our logo and font are also AI-generated.
@@ -104,7 +109,7 @@ A: Well! (I think) If you're curious about how our models are doing, you can wat
 
 Q: *Have you considered more efficient architectures?*
 
-A: Yes, we are exploring the full design space, including various linear-scaling attention mechanisms. In general, we have found that a mix of global and local attention is important for robust performance.
+A: Yes, we are exploring the full design space, including various linear-scaling attention mechanisms, mixture-of-experts, and other designs. In general, we have found that a mix of global and local attention is important for robust performance.
 
 
 Q: *Is GPT-Neo free software?*
@@ -119,7 +124,7 @@ A: The Pile™ is a collection of many smaller datasets. It includes a large div
 
 Q: *What's the format of the Pile™?*
 
-A: We use a simple, compressed JSON format of our own design called [lm_dataformat (LMD)](https://github.com/leogao2/lm_dataformat). It's designed to make writing, storing, and reading text simple and performant. Every logical document maps to a JSON object with `text` and `meta` fields, and batches of these objects are compressed using `zstd` or `gz`.
+A: We use a simple, compressed JSON format of our own design called [lm_dataformat (LMD)](https://github.com/leogao2/lm_dataformat). It's designed to make writing, storing, and reading text simple and performant. Every logical document maps to a JSON object with `text` and `meta` fields, and batches of these objects are compressed using `zstd` or `gz`. Any kind of corpus that goes into the Pile™---whether HTML, ePUB, PDF extraction, etc.---will be converted into LMD.
 
 Q: *Who can use the Pile™?*
 
@@ -160,9 +165,23 @@ Q: *Why are you building HUMONGOUS?*
 A: Because none of the other large datasets met our needs. For Pile™ v2, we will need tens of terabytes of clean, multilingual text, which is quite hard to come by! For that, we felt that building our own pipeline to extract LM-ready text from raw WARC (Web ARChive) files was the best strategy.
 
 
+Q: *Doesn't Common Crawl already provide processed plaintext in WET files?*
+
+A: Yes, and they are *horrendous* in quality (no slight intended to the good folks at CC). For LM training, in their raw form, these WET files are basically unusable for LM training. Also, filtering text files is really hard. 
+
+
 Q: *How is HUMONGOUS different from ([OSCAR](https://oscar-corpus.com/)/[C4](https://www.tensorflow.org/datasets/catalog/c4)/[CC100](http://data.statmt.org/cc-100/))?*
 
-A: Compared to other Common-Crawl derived datasets, HUMONGOUS aims to do a couple of things:
+A: From a filtering standpoint, our goal is to eliminate *most* of the cruft so researchers can filter---however they want to---a 35TB dataset (for example), rather than a 3500TB one. Compared to other Common-Crawl derived datasets, HUMONGOUS aims to do a couple of things:
 * Start from the raw WARC files, rather than WET files, which allows us to extract better text.
 * Be fully multi-lingual, covering as many languages as we can identify.
 * Process all Common Crawl dumps, past and future, not just one month's snapshot.
+
+
+Q: *How big will the resulting text be?*
+
+A: We don’t know for sure yet, but probably a few dozen TB. 
+
+Q: *But won't this take __ages__?*
+
+A: It could, but we don’t need to do it all at once. CC can be split into chunks and processed gradually, only taking as much as is needed for the various stages of the Pile™, and handling the rest over a longer period.
