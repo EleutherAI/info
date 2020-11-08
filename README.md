@@ -9,7 +9,7 @@
 🔔 *[This Announcement Does Not Exist](https://github.com/EleutherAI/info/blob/main/ANNOUNCEMENTS.md)* (Feb. 30) 🔔
 
 ### Project Statuses
-(*Last updated November 1, 2020*)
+(*Last updated November 8, 2020*)
 * __GPT-Neo__: Architecture built. 1.3B model trained. Release pending evaluations.
 * __Pile™ v1__: Data collected. Deduplication in progress. Release pending writeup.
 * __Pile™ v2__: Data collection begun. Looking for > 10GiB datasets, non-English.
@@ -17,7 +17,7 @@
 * __Radioactive Lab__: Experiments begun. Reworking after [feedback from authors](https://github.com/facebookresearch/radioactive_data/issues/3).
 
 ### Links
-* [Download the data](https://github.com/EleutherAI/The-Pile)
+* [Check out the dataset code](https://github.com/EleutherAI/The-Pile)
 * [Check out the model code](https://github.com/EleutherAI/GPTNeo)
 * [Watch the models train](https://kevinwatkins.github.io/foomboard/)
 
@@ -67,6 +67,10 @@ Other closely related questions relate to ownership of models and data. Model st
 Q: *How did this all start?*
 
 A: something something . . . Connor Leahy . . . something something
+
+Q: *Where did the name come from?*
+
+A: In Ancient Greek, [*eleutheria*](https://en.wikipedia.org/wiki/Eleutheria) is a word for "liberty", and was used as a proper noun as a personification of the concept. This same personage became [*Libertas*](https://en.wikipedia.org/wiki/Libertas) to the Romans and [*Lady Liberty*](https://en.wikipedia.org/wiki/Statue_of_Liberty) to Americans.
 
 Q: *How can I get involved?*
 
@@ -120,7 +124,7 @@ A: We have not determined the licensing situation of GPT-Neo yet. It's possible 
 
 Q: *What's in the Pile™?*
 
-A: The Pile™ is a collection of many smaller datasets. It includes a large diversity of text, from academic writing, to legal texts, to online literature, video subtitles, and more. This abundance means that saying precisely what is in this meta-dataset is difficult. If you are interested in exploring this, send a message to `#the-pile` on Discord.
+A: The Pile™ a 1.2TiB chunk out of a large collection of many smaller datasets. It includes a large diversity of text, from academic writing, to legal texts, to online literature, video subtitles, and more. This abundance means that saying precisely what is in this meta-dataset is difficult. If you are interested in exploring this, send a message to `#the-pile` on Discord.
 
 Q: *What's the format of the Pile™?*
 
@@ -146,9 +150,13 @@ Q: *Can I add something to the Pile™?*
 
 A: Yes! The process for adding a new dataset to the collection is outlined in the [repo](https://github.com/EleutherAI/The-Pile). All contributions intended for v2 will go to the `version2` branch.
 
+Q: *Have you considered adding Discord logs?*
+
+A: Yes. We decided against it, as there are good privacy reasons Discord users may not expect or want their conversations unwittingly added to a public dataset like this. Collecting such dataset would most likely also violate [Discord's ToS](https://discord.com/terms). In general, more trouble than they're worth.
+
 Q: *Can I make my own version of the Pile™?*
 
-A: Of course! For just this reason, all of the components are reproducible. Look for a repo labeled as `pile-[COMPONENT]` or `pile_[COMPONENT]` if you want to reproduce a component. We also may provide links to pre-processed components to allow you to mix, match, and re-sample to derive your own datasets.
+A: Of course! For just this reason, all of the components and the Pile creation process are reproducible. Look for a repo labeled as `pile-[COMPONENT]` or `pile_[COMPONENT]` if you want to reproduce a component. [This repo](https://github.com/EleutherAI/The-Pile) is where you should go if you want to build your own pile out of the same base datasets. We may also provide links to pre-processed components to allow you to mix, match, and re-sample to derive your own.
 
 ### The Radioactive Lab
 
