@@ -9,9 +9,9 @@
 🔔 *[This Announcement Does Not Exist](https://github.com/EleutherAI/info/blob/main/ANNOUNCEMENTS.md)* (Feb. 30) 🔔
 
 ### Project Statuses
-(*Last updated November 8, 2020*)
-* __GPT-Neo__: Architecture built. 1.3B model trained. Release pending evaluations.
-* __Pile™ v1__: Data collected. Deduplication in progress. Release pending writeup.
+(*Last updated November 11, 2020*)
+* __GPT-Neo__: Architecture built. 1.3B model trained; release pending evaluations.
+* __Pile™ v1__: Data finalized. Release pending analysis, ablations, and writeup.
 * __Pile™ v2__: Data collection begun. Looking for > 10GiB datasets, non-English.
 * __OpenWebText2__: Data collected and [released](https://openwebtext2.readthedocs.io/en/latest/).
 * __Radioactive Lab__: Experiments begun. Reworking after [feedback from authors](https://github.com/facebookresearch/radioactive_data/issues/3).
@@ -30,7 +30,7 @@ EleutherAI (/iˈluθər eɪ. aɪ/) is a grassroots collection of researchers wor
 
 #### [GPT-Neo](https://github.com/EleutherAI/GPTNeo)
 
-GPT-Neo is the code name for a series of transformer-based language models loosely styled around the GPT architecture that we plan to train and open source. One of our goals is to replicate a GPT-3 sized model and open source it to the public, for free. 
+GPT-Neo is the name of our codebase for transformer-based language models loosely styled around the GPT architecture. One of our goals is to use GPT-Neo to replicate a GPT-3 sized model and open source it to the public, for free. 
 
 Along the way we will be running experiments with alternative architectures and attention types, releasing any intermediate models, and writing up any findings on our blog. 
 
@@ -66,7 +66,15 @@ Other closely related questions relate to ownership of models and data. Model st
 
 Q: *How did this all start?*
 
-A: something something . . . Connor Leahy . . . something something
+A: On July 3rd, 2020, [Connor Leahy](https://github.com/ConnorJL) posted in the TPU Podcast Discord:
+> https://arxiv.org/abs/2006.16668
+> 
+> Hey guys lets give OpenAI a run for their money like the good ol' days
+
+To which [Leo Gao](https://github.com/leogao2) replied:
+> this but unironically
+
+And so it began.
 
 Q: *Where did the name come from?*
 
@@ -78,11 +86,14 @@ A: Join our [Discord](https://www.google.com/url?q=https%3A%2F%2Fdiscord.gg%2FMj
 
 Q: *Are there any other ways to support EleutherAI?*
 
-A: Our biggest needs at the moment in the __compute__ department. If you or someone you know has access to large quantities of CPU, GPU, or TPU resources, send a message to Sid with more details.
+A: Yes.
+* If you're fluent in a language other than English, we would like your input as we build the Pile™ v2. Send a message to `@bmk` on Discord if you would be interested in helping us here.
+* Help us on our projects. Our evaluation suite and alignment work are in particular need for more contributors.
+* If you or someone you know has access to large quantities of CPU, GPU, or TPU resources, send a message to `@Sid` with more details.
 
 Q: *How does EleutherAI operate?*
 
-A: We currently have a flat structure, with each member responsible for keeping the project control information up to date. Each project has a leader and set of core contributors, so please speak to them first in the Discord if you want to participate. StellaAthena has taken on a leadership and coordination role, and has overall responsibility for the Documentation and Project Control systems. 
+A: We currently have a flat structure, with each member responsible for keeping the project control information up to date. Each project has a leader and set of core contributors, so please speak to them first in the Discord if you want to participate. [Connor](https://github.com/ConnorJL) has set the group's alignment vision and general direction. [Stella](https://github.com/StellaAthena) has taken on a leadership and coordination role, and has overall responsibility for the Documentation and Project Control systems. [Leo](https://github.com/leogao2) and [Sid](https://github.com/sdtblck) have led development of the Pile™ and model training, repsectively.
 
 
 Q: *So . . . what's the deal with your logo?*
@@ -95,7 +106,11 @@ A: The Discord is the best place for that. The community has always been helpful
 
 ### GPT-Neo
 
-Q: *How are you going to train such a big model?*
+Q: *What is GPT-Neo?*
+
+A: GPT-Neo is our codebase for training massive language models, which we plan to release as open source. The models themselves are *unnamed*, as of yet.
+
+Q: *How are you going to train such big models?*
 
 A: We have built a [framework](https://github.com/EleutherAI/GPTNeo) using Mesh Tensorflow that lets us train models at super-large scales, including on GPUs and TPUs. At the moment, we have limited access to preemptible TPUs through the [TensorFlow Research Cloud (TFRC) program](https://www.tensorflow.org/tfrc). In the future, our plan is to ask "*please, sir, may I have some more?*". In the event such a plan does not work, we will consider other options.
 
@@ -118,13 +133,17 @@ A: Yes, we are exploring the full design space, including various linear-scaling
 
 Q: *Is GPT-Neo free software?*
 
-A: We have not determined the licensing situation of GPT-Neo yet. It's possible we might use some combination of permissive licensing for the code and copyleft licensing for the models themselves. We'll see.
+A: GPT-Neo is MIT-licensed, it is open source.
+
+Q: *Are the models free software?*
+
+A: We have not determined the licensing situation for our models yet.
 
 ### The Pile™
 
 Q: *What's in the Pile™?*
 
-A: The Pile™ a 1.2TiB chunk out of a large collection of many smaller datasets. It includes a large diversity of text, from academic writing, to legal texts, to online literature, video subtitles, and more. This abundance means that saying precisely what is in this meta-dataset is difficult. If you are interested in exploring this, send a message to `#the-pile` on Discord.
+A: The Pile™ a 1 Terabyte dataset constructed from a curated conglomeration of diverse, high-quality text datasets. It covers a wide gamut, from academic writing, to legal texts, to online literature, video subtitles, and more. This abundance means that saying precisely what is in this meta-dataset is difficult. If you are interested in exploring this, send a message to `#the-pile` on Discord.
 
 Q: *What's the format of the Pile™?*
 
@@ -148,7 +167,7 @@ A: We are looking to potentially announce several options for folks to source th
 
 Q: *Can I add something to the Pile™?*
 
-A: Yes! The process for adding a new dataset to the collection is outlined in the [repo](https://github.com/EleutherAI/The-Pile). All contributions intended for v2 will go to the `version2` branch.
+A: Yes! All contributions should be sent to the [`version2` branch](https://github.com/EleutherAI/The-Pile/tree/version2). Pile™ v1 is finalized an is no longer accepting contributions.
 
 Q: *Have you considered adding Discord logs?*
 
