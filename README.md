@@ -6,7 +6,7 @@
 
 ### Announcements
 
-🔔 *[This Announcement Does Not Exist](https://github.com/EleutherAI/info/blob/main/ANNOUNCEMENTS.md)* (Feb. 30) 🔔
+Nothing yet . . .
 
 ### Project Statuses
 (*Last updated November 11, 2020*)
@@ -55,7 +55,7 @@ Other closely related questions relate to ownership of models and data. Model st
 ### Other Activities
 
 * __HUMONGOUS__: In order to feed growing multilingual language models, we'd like to build on the massive amount of webpages that [Common Crawl](https://commoncrawl.org/) has archived. HUMONGOUS is our attempt to convert *all* of the Common Crawl dumps---more than a petabyte of data---into useable, LM-ready text.
-* __Alignment Reading Group__: Many of us believe that [aligning artificial intelligences](https://www.youtube.com/watch?v=EUjc1WuyPT8&t=431s) is potentially _the most pressing issue_ for us to address, long term. 
+* __Alignment Reading Group__: Many of us believe that [aligning artificial intelligences](https://www.youtube.com/watch?v=EUjc1WuyPT8) is potentially _the most pressing issue_ for us to address, long term. 
 * __Interpretability__: Understanding what language models (LMs) are doing and why is of interest to many members of the NLP community. One of our channels is dedicated to just this kind of work.
 * __Research__: Chatting about whatever research is of interest, be it group theory, scaling laws, neuromorphic computing, or anything else under the sun.
 
@@ -93,7 +93,7 @@ A: Yes.
 
 Q: *How does EleutherAI operate?*
 
-A: We currently have a flat structure, with each member responsible for keeping the project control information up to date. Each project has a leader and set of core contributors, so please speak to them first in the Discord if you want to participate. [Connor](https://github.com/ConnorJL) has set the group's alignment vision and general direction. [Stella](https://github.com/StellaAthena) has taken on a leadership and coordination role, and has overall responsibility for the Documentation and Project Control systems. [Leo](https://github.com/leogao2) and [Sid](https://github.com/sdtblck) have led development of the Pile™ and model training, repsectively.
+A: We currently have a flat structure, with each member responsible for keeping the project control information up to date. Each project has a leader and set of core contributors, so please speak to them first in the Discord if you want to participate. [Connor](https://github.com/ConnorJL) has set the group's alignment vision and general direction. [Stella](https://github.com/StellaAthena) has taken on a leadership and coordination role, and has overall responsibility for the Documentation and Project Control systems. [Leo](https://github.com/leogao2) and [Sid](https://github.com/sdtblck) have led development of the Pile™ and model training, respectively.
 
 
 Q: *So . . . what's the deal with your logo?*
