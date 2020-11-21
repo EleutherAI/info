@@ -9,10 +9,10 @@
 Nothing yet . . .
 
 ### Project Statuses
-(*Last updated November 11, 2020*)
+(*Last updated November 20, 2020*)
 * __GPT-Neo__: Architecture built. 1.3B model trained; release pending evaluations.
-* __Pile™ v1__: Data finalized. Release pending analysis, ablations, and writeup.
-* __Pile™ v2__: Data collection begun. Looking for > 10GiB datasets, non-English.
+* __Pile v1__: Data finalized. Release pending analysis, baseline, and writeup.
+* __Pile v2__: Data collection begun. Looking for > 10GiB datasets, non-English.
 * __OpenWebText2__: Data collected and [released](https://openwebtext2.readthedocs.io/en/latest/).
 * __Radioactive Lab__: Experiments begun. Reworking after [feedback from authors](https://github.com/facebookresearch/radioactive_data/issues/3).
 
@@ -139,33 +139,33 @@ Q: *Are the models free software?*
 
 A: We have not determined the licensing situation for our models yet.
 
-### The Pile™
+### The Pile
 
-Q: *What's in the Pile™?*
+Q: *What's in the Pile?*
 
-A: The Pile™ a 1 Terabyte dataset constructed from a curated conglomeration of diverse, high-quality text datasets. It covers a wide gamut, from academic writing, to legal texts, to online literature, video subtitles, and more. This abundance means that saying precisely what is in this meta-dataset is difficult. If you are interested in exploring this, send a message to `#the-pile` on Discord.
+A: The Pile is a 1 Terabyte dataset constructed from a curated conglomeration of diverse, high-quality text datasets. It covers a wide gamut, from academic writing, to legal texts, to online literature, video subtitles, and more. This abundance means that saying precisely what is in this meta-dataset is difficult. If you are interested in exploring this, send a message to `#the-pile` on Discord.
 
-Q: *What's the format of the Pile™?*
+Q: *What's the format of the Pile?*
 
 A: We use a simple, compressed JSON format of our own design called [lm_dataformat (LMD)](https://github.com/leogao2/lm_dataformat). It's designed to make writing, storing, and reading text simple and performant. Every logical document maps to a JSON object with `text` and `meta` fields, and batches of these objects are compressed using `zstd` or `gz`. Any kind of corpus that goes into the Pile™---whether HTML, ePUB, PDF extraction, etc.---will be converted into LMD.
 
-Q: *Who can use the Pile™?*
+Q: *Who can use the Pile?*
 
-A: The Pile™ was primarily designed for researchers training large-scale langauge models. It also may be of interest to other researchers interested in topics such as bias, online discourse, and text compression.
+A: The Pile was primarily designed for researchers training large-scale langauge models. It also may be of interest to other researchers interested in topics such as bias, online discourse, and text compression.
 
-Q: *Is the Pile™ released yet?*
+Q: *Is the Pile released yet?*
 
 A: No.
 
-Q: *When will the Pile™ be released?*
+Q: *When will the Pile be released?*
 
 A: Soon . . .
 
-Q: *Where will I be able to get the Pile™ once it's released?*
+Q: *Where will I be able to get the Pile once it's released?*
 
-A: We are looking to potentially announce several options for folks to source the Pile™ from. Be on the lookout for announcements.
+A: We are looking to potentially announce several options for folks to source the Pile from. Be on the lookout for announcements.
 
-Q: *Can I add something to the Pile™?*
+Q: *Can I add something to the Pile?*
 
 A: Yes! All contributions should be sent to the [`version2` branch](https://github.com/EleutherAI/The-Pile/tree/version2). Pile™ v1 is finalized an is no longer accepting contributions.
 
@@ -186,6 +186,8 @@ A: The Rad Lab is pursuing a number of directions to stamp our models. One of pa
 ### Other Activities
 
 #### HUMONGOUS
+
+Status: on hold until we figure out proper multilingual
 
 Q: *Why are you building HUMONGOUS?*
 
