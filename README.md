@@ -9,10 +9,10 @@
 Nothing yet . . .
 
 ### Project Statuses
-(*Last updated November 20, 2020*)
+(*Last updated December 10, 2020*)
 * __GPT-Neo__: 1.3B model has trained and is being evaluated. 13B model on the way.
 * __Pile v1__: Data finalized. Release pending analysis, baseline, and writeup.
-* __Pile v2__: Data collection begun. Looking for > 10GiB datasets, non-English.
+* __Pile v2__: Data collection begun. Looking for > 50GiB datasets, non-English.
 * __OpenWebText2__: [Released](https://openwebtext2.readthedocs.io/en/latest/).
 * __Radioactive Lab__: Experiments begun. Reworking after [feedback from authors](https://github.com/facebookresearch/radioactive_data/issues/3).
 * __Scaling Laws__: Just getting started.
@@ -39,7 +39,7 @@ Our models are built in [Mesh TensorFlow](https://github.com/tensorflow/mesh), w
 
 #### [The Pile™](https://github.com/EleutherAI/The-Pile)
 
-The Pile is a large, diverse, open source language modelling data set that consists of many smaller datasets combined together. The objective is to obtain text from as many modalities as possible to ensure that models trained using The Pile will have much broader generalization abilities. We are currently developing Version 1, with a goal of [1 TiB of English text](https://github.com/EleutherAI/The-Pile). After the completion of Version 1, our next goal is a [fully-multilingual, 10TiB text dataset](https://github.com/EleutherAI/The-Pile/tree/version2).
+The Pile is a large, diverse, open source language modelling data set that consists of many smaller datasets combined together. The objective is to obtain text from as many modalities as possible to ensure that models trained using The Pile will have much broader generalization abilities. We are currently developing Version 1, with a goal of [1.25 TiB of English text](https://github.com/EleutherAI/The-Pile). After the completion of Version 1, our next goal is a [fully-multilingual, 100TiB text dataset](https://github.com/EleutherAI/The-Pile/tree/version2).
 
 #### [OpenWebText2](https://openwebtext2.readthedocs.io/en/latest/)
 
@@ -56,8 +56,6 @@ Other closely related questions relate to ownership of models and data. Model st
 #### Scaling Laws
 
 Recent papers by [Kaplan et al.](https://arxiv.org/abs/2001.08361) and [Henighen et al.](https://arxiv.org/abs/2010.14701) has spurred empirical research into the way the performance of neural networks (especially language models) changes as you increase the avaliable data, computing power, and number of parameters. As we work to build larger and more powerful models, this work gives us important insight into the tradeoffs between choices for allocating resources and where the biggest impacts in performance improvement are likely to come from. 
-
-
 
 ### Other Activities
 
@@ -150,7 +148,7 @@ A: We have not determined the licensing situation for our models yet.
 
 Q: *What's in the Pile?*
 
-A: The Pile is a 1 Terabyte dataset constructed from a curated conglomeration of diverse, high-quality text datasets. It covers a wide gamut, from academic writing, to legal texts, to online literature, video subtitles, and more. This abundance means that saying precisely what is in this meta-dataset is difficult. If you are interested in exploring this, send a message to `#the-pile` on Discord.
+A: The Pile is a 1.25 Terabyte dataset constructed from a curated conglomeration of diverse, high-quality text datasets. It covers a wide gamut, from academic writing, to legal texts, to online literature, video subtitles, and more. This abundance means that saying precisely what is in this meta-dataset is difficult. If you are interested in exploring this, send a message to `#the-pile` on Discord.
 
 Q: *What's the format of the Pile?*
 
@@ -204,7 +202,6 @@ A: Because none of the other large datasets met our needs. For Pile™ v2, we wi
 Q: *Doesn't Common Crawl already provide processed plaintext in WET files?*
 
 A: Yes, and they are *horrendous* in quality (no slight intended to the good folks at CC). For LM training, in their raw form, these WET files are basically unusable for LM training. Also, filtering text files is really hard. 
-
 
 Q: *How is HUMONGOUS different from ([OSCAR](https://oscar-corpus.com/)/[C4](https://www.tensorflow.org/datasets/catalog/c4)/[CC100](http://data.statmt.org/cc-100/))?*
 
