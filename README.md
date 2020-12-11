@@ -10,11 +10,12 @@ Nothing yet . . .
 
 ### Project Statuses
 (*Last updated November 20, 2020*)
-* __GPT-Neo__: Architecture built. 1.3B model trained; release pending evaluations.
+* __GPT-Neo__: 1.3B model has trained and is being evaluated. 13B model on the way.
 * __Pile v1__: Data finalized. Release pending analysis, baseline, and writeup.
 * __Pile v2__: Data collection begun. Looking for > 10GiB datasets, non-English.
-* __OpenWebText2__: Data collected and [released](https://openwebtext2.readthedocs.io/en/latest/).
+* __OpenWebText2__: [Released](https://openwebtext2.readthedocs.io/en/latest/).
 * __Radioactive Lab__: Experiments begun. Reworking after [feedback from authors](https://github.com/facebookresearch/radioactive_data/issues/3).
+* __Scaling Laws__: Just getting started.
 
 ### Links
 * [Check out the dataset code](https://github.com/EleutherAI/The-Pile)
@@ -52,12 +53,18 @@ Modern deep learning systems are commonly deployed in distributed and cloud sett
 
 Other closely related questions relate to ownership of models and data. Model stealing and data stealing attacks have the ability to compromise individual and company privacy and intellectual property. This application is particularly important to EleutherAI as an organization that distributes open-source software. We are proud to offer all of our work open source, but we would like to know who is using our models and for what purposes.
 
+#### Scaling Laws
+
+Recent papers by [Kaplan et al.](https://arxiv.org/abs/2001.08361) and [Henighen et al.](https://arxiv.org/abs/2010.14701) has spurred empirical research into the way the performance of neural networks (especially language models) changes as you increase the avaliable data, computing power, and number of parameters. As we work to build larger and more powerful models, this work gives us important insight into the tradeoffs between choices for allocating resources and where the biggest impacts in performance improvement are likely to come from. 
+
+
+
 ### Other Activities
 
 * __HUMONGOUS__: In order to feed growing multilingual language models, we'd like to build on the massive amount of webpages that [Common Crawl](https://commoncrawl.org/) has archived. HUMONGOUS is our attempt to convert *all* of the Common Crawl dumps---more than a petabyte of data---into useable, LM-ready text.
 * __Alignment Reading Group__: Many of us believe that [aligning artificial intelligences](https://www.youtube.com/watch?v=EUjc1WuyPT8) is potentially _the most pressing issue_ for us to address, long term. 
 * __Interpretability__: Understanding what language models (LMs) are doing and why is of interest to many members of the NLP community. One of our channels is dedicated to just this kind of work.
-* __Research__: Chatting about whatever research is of interest, be it group theory, scaling laws, neuromorphic computing, or anything else under the sun.
+* __#Research__: Chatting about whatever research is of interest, be it group theory, scaling laws, neuromorphic computing, or anything else under the sun.
 
 
 ## Q&A
