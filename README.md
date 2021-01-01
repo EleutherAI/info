@@ -9,12 +9,13 @@
 Nothing yet . . .
 
 ### Project Statuses
-(*Last updated November 11, 2020*)
-* __GPT-Neo__: Architecture built. 1.3B model trained; release pending evaluations.
-* __Pile™ v1__: Data finalized. Release pending analysis, ablations, and writeup.
-* __Pile™ v2__: Data collection begun. Looking for > 10GiB datasets, non-English.
-* __OpenWebText2__: Data collected and [released](https://openwebtext2.readthedocs.io/en/latest/).
+(*Last updated December 10, 2020*)
+* __GPT-Neo__: 1.3B model has trained and is being evaluated. 13B model on the way.
+* __Pile v1__: Data finalized. Release pending analysis, baseline, and writeup.
+* __Pile v2__: Data collection begun. Looking for > 50GiB datasets, non-English.
+* __OpenWebText2__: [Released](https://openwebtext2.readthedocs.io/en/latest/).
 * __Radioactive Lab__: Experiments begun. Reworking after [feedback from authors](https://github.com/facebookresearch/radioactive_data/issues/3).
+* __Scaling Laws__: Just getting started.
 
 ### Links
 * [Check out the dataset code](https://github.com/EleutherAI/The-Pile)
@@ -38,7 +39,7 @@ Our models are built in [Mesh TensorFlow](https://github.com/tensorflow/mesh), w
 
 #### [The Pile™](https://github.com/EleutherAI/The-Pile)
 
-The Pile is a large, diverse, open source language modelling data set that consists of many smaller datasets combined together. The objective is to obtain text from as many modalities as possible to ensure that models trained using The Pile will have much broader generalization abilities. We are currently developing Version 1, with a goal of [1 TiB of English text](https://github.com/EleutherAI/The-Pile). After the completion of Version 1, our next goal is a [fully-multilingual, 10TiB text dataset](https://github.com/EleutherAI/The-Pile/tree/version2).
+The Pile is a large, diverse, open source language modelling data set that consists of many smaller datasets combined together. The objective is to obtain text from as many modalities as possible to ensure that models trained using The Pile will have much broader generalization abilities. We are currently developing Version 1, with a goal of [1.25 TiB of English text](https://github.com/EleutherAI/The-Pile). After the completion of Version 1, our next goal is a [fully-multilingual, 100TiB text dataset](https://github.com/EleutherAI/The-Pile/tree/version2).
 
 #### [OpenWebText2](https://openwebtext2.readthedocs.io/en/latest/)
 
@@ -52,12 +53,16 @@ Modern deep learning systems are commonly deployed in distributed and cloud sett
 
 Other closely related questions relate to ownership of models and data. Model stealing and data stealing attacks have the ability to compromise individual and company privacy and intellectual property. This application is particularly important to EleutherAI as an organization that distributes open-source software. We are proud to offer all of our work open source, but we would like to know who is using our models and for what purposes.
 
+#### Scaling Laws
+
+Recent papers by [Kaplan et al.](https://arxiv.org/abs/2001.08361) and [Henighen et al.](https://arxiv.org/abs/2010.14701) has spurred empirical research into the way the performance of neural networks (especially language models) changes as you increase the avaliable data, computing power, and number of parameters. As we work to build larger and more powerful models, this work gives us important insight into the tradeoffs between choices for allocating resources and where the biggest impacts in performance improvement are likely to come from. 
+
 ### Other Activities
 
 * __HUMONGOUS__: In order to feed growing multilingual language models, we'd like to build on the massive amount of webpages that [Common Crawl](https://commoncrawl.org/) has archived. HUMONGOUS is our attempt to convert *all* of the Common Crawl dumps---more than a petabyte of data---into useable, LM-ready text.
 * __Alignment Reading Group__: Many of us believe that [aligning artificial intelligences](https://www.youtube.com/watch?v=EUjc1WuyPT8) is potentially _the most pressing issue_ for us to address, long term. 
 * __Interpretability__: Understanding what language models (LMs) are doing and why is of interest to many members of the NLP community. One of our channels is dedicated to just this kind of work.
-* __Research__: Chatting about whatever research is of interest, be it group theory, scaling laws, neuromorphic computing, or anything else under the sun.
+* __#Research__: Chatting about whatever research is of interest, be it group theory, scaling laws, neuromorphic computing, or anything else under the sun.
 
 
 ## Q&A
@@ -139,33 +144,33 @@ Q: *Are the models free software?*
 
 A: We have not determined the licensing situation for our models yet.
 
-### The Pile™
+### The Pile
 
-Q: *What's in the Pile™?*
+Q: *What's in the Pile?*
 
-A: The Pile™ a 1 Terabyte dataset constructed from a curated conglomeration of diverse, high-quality text datasets. It covers a wide gamut, from academic writing, to legal texts, to online literature, video subtitles, and more. This abundance means that saying precisely what is in this meta-dataset is difficult. If you are interested in exploring this, send a message to `#the-pile` on Discord.
+A: The Pile is a 1.25 Terabyte dataset constructed from a curated conglomeration of diverse, high-quality text datasets. It covers a wide gamut, from academic writing, to legal texts, to online literature, video subtitles, and more. This abundance means that saying precisely what is in this meta-dataset is difficult. If you are interested in exploring this, send a message to `#the-pile` on Discord.
 
-Q: *What's the format of the Pile™?*
+Q: *What's the format of the Pile?*
 
 A: We use a simple, compressed JSON format of our own design called [lm_dataformat (LMD)](https://github.com/leogao2/lm_dataformat). It's designed to make writing, storing, and reading text simple and performant. Every logical document maps to a JSON object with `text` and `meta` fields, and batches of these objects are compressed using `zstd` or `gz`. Any kind of corpus that goes into the Pile™---whether HTML, ePUB, PDF extraction, etc.---will be converted into LMD.
 
-Q: *Who can use the Pile™?*
+Q: *Who can use the Pile?*
 
-A: The Pile™ was primarily designed for researchers training large-scale langauge models. It also may be of interest to other researchers interested in topics such as bias, online discourse, and text compression.
+A: The Pile was primarily designed for researchers training large-scale langauge models. It also may be of interest to other researchers interested in topics such as bias, online discourse, and text compression.
 
-Q: *Is the Pile™ released yet?*
+Q: *Is the Pile released yet?*
 
 A: No.
 
-Q: *When will the Pile™ be released?*
+Q: *When will the Pile be released?*
 
 A: Soon . . .
 
-Q: *Where will I be able to get the Pile™ once it's released?*
+Q: *Where will I be able to get the Pile once it's released?*
 
-A: We are looking to potentially announce several options for folks to source the Pile™ from. Be on the lookout for announcements.
+A: We are looking to potentially announce several options for folks to source the Pile from. Be on the lookout for announcements.
 
-Q: *Can I add something to the Pile™?*
+Q: *Can I add something to the Pile?*
 
 A: Yes! All contributions should be sent to the [`version2` branch](https://github.com/EleutherAI/The-Pile/tree/version2). Pile™ v1 is finalized an is no longer accepting contributions.
 
@@ -187,6 +192,8 @@ A: The Rad Lab is pursuing a number of directions to stamp our models. One of pa
 
 #### HUMONGOUS
 
+Status: on hold until we figure out proper multilingual
+
 Q: *Why are you building HUMONGOUS?*
 
 A: Because none of the other large datasets met our needs. For Pile™ v2, we will need tens of terabytes of clean, multilingual text, which is quite hard to come by! For that, we felt that building our own pipeline to extract LM-ready text from raw WARC (Web ARChive) files was the best strategy.
@@ -195,7 +202,6 @@ A: Because none of the other large datasets met our needs. For Pile™ v2, we wi
 Q: *Doesn't Common Crawl already provide processed plaintext in WET files?*
 
 A: Yes, and they are *horrendous* in quality (no slight intended to the good folks at CC). For LM training, in their raw form, these WET files are basically unusable for LM training. Also, filtering text files is really hard. 
-
 
 Q: *How is HUMONGOUS different from ([OSCAR](https://oscar-corpus.com/)/[C4](https://www.tensorflow.org/datasets/catalog/c4)/[CC100](http://data.statmt.org/cc-100/))?*
 
