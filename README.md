@@ -39,7 +39,7 @@ Our models are built in [Mesh TensorFlow](https://github.com/tensorflow/mesh), w
 
 #### [The Pile™](https://github.com/EleutherAI/the-pile)
 
-The Pile is a large, diverse, open source language modelling data set that consists of many smaller datasets combined together. The objective is to obtain text from as many modalities as possible to ensure that models trained using The Pile will have much broader generalization abilities. We are currently developing Version 1, with a goal of [1.25 TiB of English text](https://github.com/EleutherAI/the-pile). After the completion of Version 1, our next goal is a [fully-multilingual, 100TiB text dataset](https://github.com/EleutherAI/the-pile/tree/version2).
+The Pile is a large, diverse, open source language modelling data set that consists of many smaller datasets combined together. The objective is to obtain text from as many modalities as possible to ensure that models trained using The Pile will have much broader generalization abilities. We have completed Version 1, meeting our goal of [1.25 TiB of English training data](https://github.com/EleutherAI/the-pile). Our next goal is a [fully-multilingual, 100TiB text dataset](https://github.com/EleutherAI/the-pile/tree/version2).
 
 #### [OpenWebText2](https://openwebtext2.readthedocs.io/en/latest/)
 
