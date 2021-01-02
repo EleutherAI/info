@@ -6,20 +6,20 @@
 
 ### Announcements
 
-Nothing yet . . .
+🔔🔔 [Pile v1 Release](https://twitter.com/nabla_theta/status/1345130408170541056?s=20) 🔔🔔
 
 ### Project Statuses
-(*Last updated December 10, 2020*)
+(*Last updated January 1, 2021*)
 * __GPT-Neo__: 1.3B model has trained and is being evaluated. 13B model on the way.
-* __Pile v1__: Data finalized. Release pending analysis, baseline, and writeup.
+* __Pile v1__: [Released](https://pile.eleuther.ai/), with [paper preprint](https://pile.eleuther.ai/paper.pdf) available.
 * __Pile v2__: Data collection begun. Looking for > 50GiB datasets, non-English.
 * __OpenWebText2__: [Released](https://openwebtext2.readthedocs.io/en/latest/).
 * __Radioactive Lab__: Experiments begun. Reworking after [feedback from authors](https://github.com/facebookresearch/radioactive_data/issues/3).
 * __Scaling Laws__: Just getting started.
 
 ### Links
-* [Check out the dataset code](https://github.com/EleutherAI/The-Pile)
-* [Check out the model code](https://github.com/EleutherAI/GPTNeo)
+* [Check out the dataset code](https://github.com/EleutherAI/the-pile)
+* [Check out the model code](https://github.com/EleutherAI/gpt-neo)
 * [Watch the models train](https://kevinwatkins.github.io/foomboard/)
 
 
@@ -29,7 +29,7 @@ EleutherAI (/iˈluθər eɪ. aɪ/) is a grassroots collection of researchers wor
 
 ### Projects
 
-#### [GPT-Neo](https://github.com/EleutherAI/GPTNeo)
+#### [GPT-Neo](https://github.com/EleutherAI/gpt-neo)
 
 GPT-Neo is the name of our codebase for transformer-based language models loosely styled around the GPT architecture. One of our goals is to use GPT-Neo to replicate a GPT-3 sized model and open source it to the public, for free. 
 
@@ -37,9 +37,9 @@ Along the way we will be running experiments with alternative architectures and 
 
 Our models are built in [Mesh TensorFlow](https://github.com/tensorflow/mesh), which will allow us to scale up to GPT-3 sizes and beyond using simultaneous model and data parallelism. 
 
-#### [The Pile™](https://github.com/EleutherAI/The-Pile)
+#### [The Pile™](https://github.com/EleutherAI/the-pile)
 
-The Pile is a large, diverse, open source language modelling data set that consists of many smaller datasets combined together. The objective is to obtain text from as many modalities as possible to ensure that models trained using The Pile will have much broader generalization abilities. We are currently developing Version 1, with a goal of [1.25 TiB of English text](https://github.com/EleutherAI/The-Pile). After the completion of Version 1, our next goal is a [fully-multilingual, 100TiB text dataset](https://github.com/EleutherAI/The-Pile/tree/version2).
+The Pile is a large, diverse, open source language modelling data set that consists of many smaller datasets combined together. The objective is to obtain text from as many modalities as possible to ensure that models trained using The Pile will have much broader generalization abilities. We have completed Version 1, meeting our goal of [1.25 TiB of English training data](https://github.com/EleutherAI/the-pile). Our next goal is a [fully-multilingual, 100TiB text dataset](https://github.com/EleutherAI/the-pile/tree/version2).
 
 #### [OpenWebText2](https://openwebtext2.readthedocs.io/en/latest/)
 
@@ -117,11 +117,11 @@ A: GPT-Neo is our codebase for training massive language models, which we plan t
 
 Q: *How are you going to train such big models?*
 
-A: We have built a [framework](https://github.com/EleutherAI/GPTNeo) using Mesh Tensorflow that lets us train models at super-large scales, including on GPUs and TPUs. At the moment, we have limited access to preemptible TPUs through the [TensorFlow Research Cloud (TFRC) program](https://www.tensorflow.org/tfrc). In the future, our plan is to ask "*please, sir, may I have some more?*". In the event such a plan does not work, we will consider other options.
+A: We have built a [framework](https://github.com/EleutherAI/gpt-neo) using Mesh Tensorflow that lets us train models at super-large scales, including on GPUs and TPUs. At the moment, we have limited access to preemptible TPUs through the [TensorFlow Research Cloud (TFRC) program](https://www.tensorflow.org/tfrc). In the future, our plan is to ask "*please, sir, may I have some more?*". In the event such a plan does not work, we will consider other options.
 
 Q: *What about distributed computing, like [Folding@Home](https://foldingathome.org/) or [hivemind](https://github.com/learning-at-home/hivemind)?*
 
-A: We've considered the possibility of pooling GPUs for training models. In short, doing it well, and at this scale is an unsolved problem that would take a lot of work to make happen. If you have expertise in this area, though, folks would be happy to hear you out.
+A: We've considered the possibility of pooling GPUs for training models. The main problems with current approaches are: a) they are unlikely to work given how extremely dense and sensitive backprop is, and MoE-based models significantly underperform regular models, b) even just considering theoretical performance, getting enough contributors to reach more compute power than we currently have is unrealistic, let alone after all the overhead of distributing, and c) current approaches are not attacker-resistant at all, or would cause enormous amounts of overhead. In short, doing it well, and at this scale is an unsolved problem that would take a lot of work to make happen. If you have expertise in this area, though, folks would be happy to hear you out.
 
 Q: *How big is the largest model you've trained?*
 
@@ -160,27 +160,23 @@ A: The Pile was primarily designed for researchers training large-scale langauge
 
 Q: *Is the Pile released yet?*
 
-A: No.
+A: Yes!
 
-Q: *When will the Pile be released?*
+Q: *Where can I get the Pile?*
 
-A: Soon . . .
-
-Q: *Where will I be able to get the Pile once it's released?*
-
-A: We are looking to potentially announce several options for folks to source the Pile from. Be on the lookout for announcements.
+A: We provide all of the code necessary to replicate the Pile yourself. Additionally, the community of data afficionados at [The-Eye](https://the-eye.eu/) are distributing [pre-built versions](https://the-eye.eu/public/AI/pile/) as well.
 
 Q: *Can I add something to the Pile?*
 
-A: Yes! All contributions should be sent to the [`version2` branch](https://github.com/EleutherAI/The-Pile/tree/version2). Pile™ v1 is finalized an is no longer accepting contributions.
+A: Yes! All contributions should be sent to the [`version2` branch](https://github.com/EleutherAI/the-pile/tree/version2). Pile v1 is finalized an is no longer accepting contributions.
 
 Q: *Have you considered adding Discord logs?*
 
 A: Yes. We decided against it, as there are good privacy reasons Discord users may not expect or want their conversations unwittingly added to a public dataset like this. Collecting such dataset would most likely also violate [Discord's ToS](https://discord.com/terms). In general, more trouble than they're worth.
 
-Q: *Can I make my own version of the Pile™?*
+Q: *Can I make my own version of the Pile?*
 
-A: Of course! For just this reason, all of the components and the Pile creation process are reproducible. Look for a repo labeled as `pile-[COMPONENT]` or `pile_[COMPONENT]` if you want to reproduce a component. [This repo](https://github.com/EleutherAI/The-Pile) is where you should go if you want to build your own pile out of the same base datasets. We may also provide links to pre-processed components to allow you to mix, match, and re-sample to derive your own.
+A: Of course! For just this reason, all of the components and the Pile creation process are reproducible. Look for a repo labeled as `pile-[COMPONENT]` or `pile_[COMPONENT]` if you want to reproduce a component. [This repo](https://github.com/EleutherAI/the-pile) is where you should go if you want to build your own pile out of the same base datasets. We may also provide links to pre-processed components to allow you to mix, match, and re-sample to derive your own.
 
 ### The Radioactive Lab
 
