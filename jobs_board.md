@@ -14,15 +14,9 @@ Software development work involves creating support systems, building software s
 
 ### Deep Learning
 
-We always need more SWEs who are skilled with deep learning to help with our projects.
-
-#### Basic Competency
+We always need more SWEs who are skilled with deep learning to help with our projects. Our biggest need is for skilled deep learning software engineers looking to contribute to open source software or build their expertise on new projects.
 
 Unfortunately we do not have many projects that are acessible to people who are beginners at deep learning. We welcome you to hang out in our Discord and learn, and may have jobs you can help with from time to time, but we have many more beginners than beginner-friendly tasks.
-
-#### Professional Competency
-
-Our biggest need is for skilled deep learning software engineers looking to contribute to open source software or build their expertise on new projects.
 
 #### Deep Learning Researchers
 
