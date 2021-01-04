@@ -20,21 +20,11 @@ Unfortunately we do not have many projects that are acessible to people who are 
 
 ### UI/UX
 
-We have sporadic need for UI/UX work. We are currently training GPT-3-style models for public release and would be very interested in
+We have sporadic need for UI/UX work. We are currently training GPT-3-style models for public release and would be very interested in assistance from anyone who could develop a web application / UI for it. Post in #website on Discord if you can help.
 
 ### Web Development and Graphic Design
 
 We sporadically need help with various tasks related to managing our intnet presence. Right now [our website](www.eleuther.ai) has the basic functionality we need, but there's always room for improvement. Post in #website on Discord if you can help.
-
-## Neural Networks
-
-### Basic Competency
-
-### Deep Learning Engineers
-
-### Deep Learning Researchers
-
-Reach out to Stella Biderman or bmk on Discord to talk one-on-one.
 
 ## Science
 
