@@ -18,8 +18,6 @@ We always need more SWEs who are skilled with deep learning to help with our pro
 
 Unfortunately we do not have many projects that are acessible to people who are beginners at deep learning. We welcome you to hang out in our Discord and learn, and may have jobs you can help with from time to time, but we have many more beginners than beginner-friendly tasks.
 
-#### Deep Learning Researchers
-
 ### UI/UX
 
 We have sporadic need for UI/UX work. We are currently training GPT-3-style models for public release and would be very interested in
