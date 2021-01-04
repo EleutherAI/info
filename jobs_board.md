@@ -32,4 +32,6 @@ Reach out to Stella Biderman or bmk on Discord to talk one-on-one.
 
 ## Mathematics
 
-We have a need for theoretical and applied mathematicians to assist with various tasks, predominantly but not exclusively surrounding implementing group equivariant neural networks. Reach out to Stella Biderman on discord to discuss one-on-one.
+We have a need for theoretical and applied mathematicians to assist with various tasks, predominantly but not exclusively surrounding implementing group equivariant neural networks and doing topological data analysis. We are interested in expanding the more mathematically sophisticated research we do, but we are strongly limited by the number of mathematicians we have.
+
+Reach out to Stella Biderman on Discord if you can help.
