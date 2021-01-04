@@ -30,7 +30,19 @@ Post in #website on Discord if you can help.
 
 Reach out to Stella Biderman or bmk on Discord to talk one-on-one.
 
-## Mathematics
+## Science
+
+### Biology
+
+We are working to implement and publish AlphaFold2.
+
+Reach out to Lucidrains on Discord or post in the #alphafold channel if you can help.
+
+### Linguistics
+
+We do a lot of NLP research, and are always interested in more linguists contributing.
+
+### Mathematics
 
 We have a need for theoretical and applied mathematicians to assist with various tasks, predominantly but not exclusively surrounding implementing group equivariant neural networks and doing topological data analysis. We are interested in expanding the more mathematically sophisticated research we do, but we are strongly limited by the number of mathematicians we have.
 
