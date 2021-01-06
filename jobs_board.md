@@ -6,7 +6,7 @@ If you have any questions, the #research channel on Discord is the best place to
 
 ## Data Processing
 
-Data processing work involves searching the internet for data, scraping and cleaning data, and writing scripts to load datasets. Since we have released the Pile and are focusing on modeling more than data right now, there are no major, large-scale data processing efforts. Some projects may have individual data processing needs.
+Data processing work involves searching the internet for data, scraping and cleaning data, and writing scripts to load datasets. Our current data processing need involves building an [evaluation harness](https://github.com/EleutherAI/lm-evaluation-harness). If you're interested in helping out, check out the open Issues in the repo or stop by #lm_thunderdome on Discord. Other projects may have individual data processing needs.
 
 ## Software Development
 
@@ -16,9 +16,9 @@ Software development work involves creating support systems, building software s
 
 We always need more SWEs who are skilled with deep learning to help with our projects. Our biggest need is for skilled deep learning software engineers looking to contribute to open source software or build their expertise on new projects.
 
-The main repo we are developing right now is our open-source GPT3 model, [gpt-neox](https://github.com/EleutherAI/gpt-neox). We try to keep the git issues as up to date as possible, so if you can familiarize yourself with the codebase and see an issue you think you can take on, go for it! Also feel free to ping @Sid on discord with any questions.
+The main repo we are developing right now is our open-source GPT3 model, [GPT-NeoX](https://github.com/EleutherAI/gpt-neox). We try to keep the git issues as up to date as possible, so if you can familiarize yourself with the codebase and see an issue you think you can take on, go for it! Also feel free to ping @Sid on discord with any questions.
 
-Other DL projects we're working on include scaling experiments (#scaling-laws), VD-VAE scaling (#vd-vae), replicating alphafold2 (#alphafold), AI (specifically language model) interpretability (#interpretability), and 'radioactive models' (#the-rad-lab). Please ask in the relevant discord channels if you think you can help out with any of the above.
+Other DL projects we're working on include scaling experiments (#scaling-laws), VD-VAE scaling (#vd-vae), replicating alphafold2 (#alphafold), reinforcement learning (DM Stella, channel coming soon), AI (specifically language model) interpretability (#interpretability), and 'radioactive models' (#the-rad-lab). Please ask in the relevant discord channels if you think you can help out with any of the above.
 
 Unfortunately we do not have many projects that are accessible to people who are beginners at deep learning. We welcome you to hang out in our Discord and learn, and may have jobs you can help with from time to time, but we have many more beginners than beginner-friendly tasks.
 
