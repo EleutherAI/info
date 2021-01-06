@@ -17,6 +17,12 @@
 * __Radioactive Lab__: Experiments begun. Reworking after [feedback from authors](https://github.com/facebookresearch/radioactive_data/issues/3).
 * __Scaling Laws__: Just getting started.
 
+### Get Involved
+
+* Join our [Discord](https://www.google.com/url?q=https%3A%2F%2Fdiscord.gg%2FMjSbyKa&sa=D&sntz=1&usg=AFQjCNHLFs5N2ipCqFsV9tnQvcAJ26BSxg)
+* If you're unsure where you can contribute, check out our [Jobs Board](https://github.com/EleutherAI/info/jobs_board.md)
+
+
 ### Links
 * [Check out the dataset code](https://github.com/EleutherAI/the-pile)
 * [Check out the model code](https://github.com/EleutherAI/gpt-neo)
