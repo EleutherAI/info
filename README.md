@@ -11,7 +11,7 @@
 ### Project Statuses
 (*Last updated January 1, 2021*)
 * __GPT-Neo__: 1.3B model has trained and is being evaluated. 13B model on the way.
-* __Pile v1__: [Released](https://pile.eleuther.ai/), with [paper preprint](https://pile.eleuther.ai/paper.pdf) available.
+* __Pile v1__: [Released](https://pile.eleuther.ai/), with [paper preprint](https://arxiv.org/abs/2101.00027) available.
 * __Pile v2__: Data collection begun. Looking for > 50GiB datasets, non-English.
 * __OpenWebText2__: [Released](https://openwebtext2.readthedocs.io/en/latest/).
 * __Radioactive Lab__: Experiments begun. Reworking after [feedback from authors](https://github.com/facebookresearch/radioactive_data/issues/3).
