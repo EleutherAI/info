@@ -18,7 +18,7 @@ We always need more SWEs who are skilled with deep learning to help with our pro
 
 The main repo we are developing right now is our open-source GPT3 model, [GPT-NeoX](https://github.com/EleutherAI/gpt-neox). We try to keep the git issues as up to date as possible, so if you can familiarize yourself with the codebase and see an issue you think you can take on, go for it! Also feel free to ping @Sid on discord with any questions.
 
-Other DL projects we're working on include scaling experiments (#scaling-laws), VD-VAE scaling (#vd-vae), replicating alphafold2 (#alphafold), reinforcement learning (DM Stella, channel coming soon), AI (specifically language model) interpretability (#interpretability), and 'radioactive models' (#the-rad-lab). Please ask in the relevant discord channels if you think you can help out with any of the above.
+Other DL projects we're working on include scaling experiments (#scaling-laws), VD-VAE scaling (#vd-vae), replicating alphafold2 (#alphafold), reinforcement learning (#reinforcement-learning), AI interpretability (#interpretability), and tracing data through training (#the-rad-lab). Please ask in the relevant discord channels if you think you can help out with any of the above.
 
 Unfortunately we do not have many projects that are accessible to people who are beginners at deep learning. We welcome you to hang out in our Discord and learn, and may have jobs you can help with from time to time, but we have many more beginners than beginner-friendly tasks.
 
