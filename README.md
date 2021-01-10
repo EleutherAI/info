@@ -116,9 +116,9 @@ Q: *Where can I go if I have more questions?*
 A: The Discord is the best place for that. The community has always been helpful to new, curious members. Additionally, some of our core contributors' usernames will appear in purple or green in the chat.
 
 Q: *I'm new to deep learning - what is a transformer?*
-   *How do i get into AI? Tell me how everything works*
+   *How do i get into AI? Tell me how everything works!*
    
-A: We are a research-focused discord channel and not an educational one. We welcome beginners to lurk and talk about topics they’re knowledgeable of, but this is not the place to get intro-level resources or answers to basic questions.
+A: We are a research-focused discord server and not an educational one. We welcome beginners to lurk and talk about topics they’re knowledgeable of, but this is not the place to get intro-level resources or answers to basic questions. We have links to several excellent beginner-friendly servers in our #communities channel.
 
 ### GPT-Neo
 
