@@ -1,20 +1,20 @@
-# Research Ideas
+## Research Ideas
 
 This document is for tracking research ideas that are appealing but nobody is actively working on. If any of these sound cool to you, bring it up in #research. Often times these ideas have people interested in them, but nobody is pushing for it enough to motivate people to work on it. If you think that that can be you, claim it!
 
-## Data
+### Data
 
-## Language Modeling
+### Language Modeling
 
-### Transformers on formal languages
+#### Transformers on formal languages
 
-### Level set estimation for transformers
+#### Level set estimation for transformers
 
-## Scaling Laws
+### Scaling Laws
 
-## Reinforcement Learning
+### Reinforcement Learning
 
-### Partial preference learning
+#### Partial preference learning
 
 There’s at type of RL that’s known as “inverse reinforcement learning” or “learning from demonstrations” because it’s basically the reverse of normal RL. You don’t have access to the reward function but instead you have access to policies created by experts. The goal is the same: you want to learn successful policies. One very interesting aspect of this is that getting superhuman performance is very hard.
 
@@ -24,4 +24,4 @@ I think that there’s a nice extension that’s more realistic end more useful.
 
 Another cool aspect of this project is that it has alignment implications. This is discussed a bit in the linked paper, but IRL and preference learning are very nearly the same thing with different wording. Anything we develop that improved an RL agent’s ability to navigate a maze will also be able to be used to help an RL agent learn human morality.
 
-## ML Theory
+### ML Theory
