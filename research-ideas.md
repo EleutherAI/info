@@ -27,3 +27,7 @@ Another cool aspect of this project is that it has alignment implications. This 
 **Point of Contact:** Stella Biderman
 
 ## ML Theory
+
+### Activation patterns + double descent
+
+The patterns in [the number of activation regions](https://arxiv.org/abs/1906.00904) and [double descent](https://arxiv.org/abs/1912.02292) look pretty similar. Plot them on the same graph and see if they line up. Maybe there's a connection?
