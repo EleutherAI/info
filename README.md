@@ -19,7 +19,7 @@
 
 ### Get Involved
 
-* Join our [Discord](https://www.google.com/url?q=https%3A%2F%2Fdiscord.gg%2FMjSbyKa&sa=D&sntz=1&usg=AFQjCNHLFs5N2ipCqFsV9tnQvcAJ26BSxg)
+* Join our [Discord](https://discord.gg/BddkRME)
 * If you're unsure where you can contribute, check out our [Jobs Board](https://github.com/EleutherAI/info/blob/main/jobs_board.md)
 
 
