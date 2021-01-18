@@ -11,7 +11,7 @@
 ### Current Projects
 (*Last updated January 18, 2021*)
 * __GPT-Neo__: TPU Code, now working on scaling our [GPU code](https://github.com/EleutherAI/gpt-neox) to run 200B+ models.
-* __Multi-Modal Transformers__: Data collection underway.
+* __Multi-Modal Transformers__: Data collection underway. We are especially interested in text-speech and text-image parallel corpuses.
 * __Radioactive Lab__: Experiments begun. Reworking after [feedback from authors](https://github.com/facebookresearch/radioactive_data/issues/3).
 * __Scaling Laws__: Just getting started.
 
