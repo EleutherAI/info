@@ -8,20 +8,21 @@
 
 🔔🔔 [Pile v1 Release](https://twitter.com/nabla_theta/status/1345130408170541056?s=20) 🔔🔔
 
-### Project Statuses
+### Current Projects
 (*Last updated January 1, 2021*)
-* __GPT-Neo__: 1.3B model has trained and is being evaluated. 13B model on the way.
-* __Pile v1__: [Released](https://pile.eleuther.ai/), with [paper preprint](https://arxiv.org/abs/2101.00027) available.
-* __Pile v2__: Data collection begun. Looking for > 50GiB datasets, non-English.
-* __OpenWebText2__: [Released](https://openwebtext2.readthedocs.io/en/latest/).
+* __GPT-Neo__: TPU Code, now working on scaling our [GPU code](https://github.com/EleutherAI/gpt-neox) to run 200B+ models.
+* __Multi-modal
 * __Radioactive Lab__: Experiments begun. Reworking after [feedback from authors](https://github.com/facebookresearch/radioactive_data/issues/3).
 * __Scaling Laws__: Just getting started.
+
+### Completed Projects
+* __Pile__: [Released](https://pile.eleuther.ai/), with [paper preprint](https://arxiv.org/abs/2101.00027) available.
+* __OpenWebText2__: [Released](https://openwebtext2.readthedocs.io/en/latest/).
 
 ### Get Involved
 
 * Join our [Discord](https://discord.gg/BddkRME)
-* If you're unsure where you can contribute, check out our [Jobs Board](https://github.com/EleutherAI/info/blob/main/jobs_board.md)
-
+* If you're unsure where you can contribute, check out our [Jobs Board](https://github.com/EleutherAI/info/blob/main/jobs_board.md) to see where we can use various skillsets.
 
 ### Links
 * [Check out the dataset code](https://github.com/EleutherAI/the-pile)
