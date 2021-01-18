@@ -9,7 +9,7 @@
 🔔🔔 [Pile v1 Release](https://twitter.com/nabla_theta/status/1345130408170541056?s=20) 🔔🔔
 
 ### Current Projects
-(*Last updated January 1, 2021*)
+(*Last updated January 18, 2021*)
 * __GPT-Neo__: TPU Code, now working on scaling our [GPU code](https://github.com/EleutherAI/gpt-neox) to run 200B+ models.
 * __Multi-Modal Transformers__: Data collection underway.
 * __Radioactive Lab__: Experiments begun. Reworking after [feedback from authors](https://github.com/facebookresearch/radioactive_data/issues/3).
