@@ -28,7 +28,7 @@ We have sporadic need for UI/UX work. We are currently training GPT-3-style mode
 
 ### Web Development and Graphic Design
 
-We sporadically need help with various tasks related to managing our intnet presence. Right now [our website](www.eleuther.ai) has the basic functionality we need, but there's always room for improvement. Post in #website on Discord if you can help.
+We sporadically need help with various tasks related to managing our intnet presence. Right now [our website](https://eleuther.ai) has the basic functionality we need, but there's always room for improvement. Post in #website on Discord if you can help.
 
 ## Science
 
