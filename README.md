@@ -21,7 +21,7 @@
 
 ### Get Involved
 
-* Join our [Discord](https://discord.gg/BddkRME)
+* Join our [Discord](https://discord.gg/vtRgjbM)
 * If you're unsure where you can contribute, check out our [Jobs Board](https://github.com/EleutherAI/info/blob/main/jobs_board.md) to see where we can use various skillsets.
 
 ### Links
