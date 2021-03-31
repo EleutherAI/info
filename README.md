@@ -1,6 +1,8 @@
-# Eleuther Info
+# Eleuther Info (Archival)
 
 ![EleutherAI Logo](https://avatars2.githubusercontent.com/u/68924597?s=200&v=4)
+
+:warning: This repo has been deprecated. Please visit the new [EleutherAI website](https://eleuther.ai) for announcements, frequently asked questions, and information on how to contribute.
 
 ## Quick Info
 
